@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <meta name="format-detection" content="telephone=none">
+  <title>Month YoY Growth</title>
+ <!--  <link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png" /> -->
+  <!-- css file include here -->
+  <link href="style/dev.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<!-- header start here -->
+<header>
+    <div class="logo">
+        <img src="images/logo.png" alt="logo">
+    </div>
+    <div class="hiddenXs float-right user">
+        <span class="profile"><img src="images/user.png" alt="user"></span>
+        <span class="name">Hello, Kaushal</span>
+    </div>
+    <span class="hiddenMd filterHdr fltrSprite">
+        <img src="images/filter.png" alt="">
+    </span>
+</header>
+<!-- header end here -->
+<main class="clearfix">
+ <!--  leftContainer start here -->
+  <div class="leftContainer">
+        <div class="vrticlHeader">
+             <span class="fliterHdr">Filter</span>
+             <span class="fliterClear" title="Clear All">Clear All</span>
+             <span class="fltrRemove"></span>
+        </div> 
+        <div class="siamCustomScroll">        
+         <div class="vrticlslcted">
+            <ul>
+               <li><span class="vrticlValue">March 2019</span><span class="sprite remove"></span></li>
+               <li><span class="vrticlValue">Passenger Cars</span><span class="sprite remove"></span></li>
+               <li><span class="vrticlValue">Ford India</span><span class="sprite remove"></span></li>
+               <li><span class="vrticlValue">Honda Cars India Ltd</span><span class="sprite remove"></span></li>
+               <li><span class="vrticlValue">Honda Cars</span><span class="sprite remove"></span></li>
+               <li><span class="vrticlValue">Ford India</span><span class="sprite remove"></span></li>
+               <li class="lessMore">
+                    <span>show less</span> 
+               </li>
+               <li class="showMore">
+                    <span>&#43; 2 more</span> 
+               </li> 
+            </ul>
+         </div>
+         <div class="vrticlFilter vrticlAnnulRp">
+             <span class="fliterHdr ff500">Month YoY Growth Period</span>
+             <div class="input-field">
+                <select class="mainSelect" id="select-name" name="select-name">
+                  <option value="1">March 2019</option>
+                  <option value="2">February 2019</option>
+                  <option value="3">January 2019</option>
+                  <option value="4">December 2018</option>
+                  <option value="5">November 2018</option>
+                  <option value="6">October 2018</option>
+                  <option value="7">September 2018</option>
+                  <option value="8">August 2018</option>
+                  <option value="9">July 2018</option>
+                  <option value="10">June 2018</option>
+                  <option value="11">May 2018</option>
+                  <option value="12">April 2018</option>
+                </select>
+            </div>
+         </div>
+          <div class="vrticlFilter vrticlSegment">
+             <div class="vrticlTopSegment"> 
+               <span class="fliterHdr ff500">Segment</span>
+             </div>
+             <ul class="fltrList fltrBlock">
+                <li>
+                   <label class="gs_control gs_checkbox">All
+                      <input type="checkbox">
+                      <span class="gs_control__indicator"></span>
+                  </label>
+                </li> 
+             </ul>
+         </div>
+         <div class="vrticlFilter">
+             <div class="vrticlTopFilter"> 
+               <span class="fliterHdr">Passenger Vehicles</span>
+               <span class="sprite arrow-down"></span>
+             </div>
+             <ul class="fltrList">
+                <li>
+                   <label class="gs_control gs_checkbox">Passenger Cars
+                      <input type="checkbox">
+                      <span class="gs_control__indicator"></span>
+                  </label>
+                </li>
+                <li>
+                   <label class="gs_control gs_checkbox">Utility Vehicles
+                      <input type="checkbox">
+                      <span class="gs_control__indicator"></span>
+                  </label>
+                </li>
+                <li>
+                   <label class="gs_control gs_checkbox">Vans
+                      <input type="checkbox">
+                      <span class="gs_control__indicator"></span>
+                  </label>
+                </li>  
+             </ul>
+         </div>
+         <div class="vrticlFilter">
+             <div class="vrticlTopFilter"> 
+               <span class="fliterHdr">Commercial Vehicles</span>
+               <span class="sprite arrow-down"></span>
+             </div>
+             <ul class="fltrList">
+                <li>
+                   <label class="gs_control gs_checkbox">Commercial Vehicles A
+                      <input type="checkbox">
+                      <span class="gs_control__indicator"></span>
+                  </label>
+                </li>
+                <li>
+                   <label class="gs_control gs_checkbox">Commercial Vehicles B
+                      <input type="checkbox">
+                      <span class="gs_control__indicator"></span>
+                  </label>
+                </li>
+                <li>
+                   <label class="gs_control gs_checkbox">Commercial Vehicles C
+                      <input type="checkbox">
+                      <span class="gs_control__indicator"></span>
+                  </label>
+                </li>  
+             </ul>
+         </div>
+         <div class="vrticlFilter">
+             <div class="vrticlTopFilter"> 
+               <span class="fliterHdr">Three Wheelers</span>
+               <span class="sprite arrow-down"></span>
+             </div>
+             <ul class="fltrList">
+                <li>
+                   <label class="gs_control gs_checkbox">Three Wheelers A
+                      <input type="checkbox">
+                      <span class="gs_control__indicator"></span>
+                  </label>
+                </li>
+                <li>
+                   <label class="gs_control gs_checkbox">Three Wheelers B
+                      <input type="checkbox">
+                      <span class="gs_control__indicator"></span>
+                  </label>
+                </li>
+                <li>
+                   <label class="gs_control gs_checkbox">Three Wheelers C
+                      <input type="checkbox">
+                      <span class="gs_control__indicator"></span>
+                  </label>
+                </li>  
+             </ul>
+         </div>
+         <div class="vrticlFilter">
+             <div class="vrticlTopFilter"> 
+               <span class="fliterHdr">Two Wheelers</span>
+               <span class="sprite arrow-down"></span>
+             </div>
+             <ul class="fltrList">
+                <li>
+                   <label class="gs_control gs_checkbox">Two Wheelers A
+                      <input type="checkbox">
+                      <span class="gs_control__indicator"></span>
+                  </label>
+                </li>
+                <li>
+                   <label class="gs_control gs_checkbox">Two Wheelers B
+                      <input type="checkbox">
+                      <span class="gs_control__indicator"></span>
+                  </label>
+                </li>
+                <li>
+                   <label class="gs_control gs_checkbox">Two Wheelers C
+                      <input type="checkbox">
+                      <span class="gs_control__indicator"></span>
+                  </label>
+                </li>  
+             </ul>
+         </div>
+         <div class="vrticlFilter borderNone">
+             <div class="vrticlTopFilter"> 
+               <span class="fliterHdr">Quadricycle</span>
+               <span class="sprite arrow-down"></span>
+             </div>
+             <ul class="fltrList">
+                <li>
+                   <label class="gs_control gs_checkbox">Quadricycle
+                      <input type="checkbox">
+                      <span class="gs_control__indicator"></span>
+                  </label>
+                </li>  
+             </ul>
+         </div>
+         <!-- <div class="vrticlQuadricycle">
+             <div class="QuadricFilter"> 
+               <span class="fliterHdr">Quadricycle</span>
+             </div>
+         </div> -->
+         <div class="vrticlFilter vrticlManufactr borderNone">
+             <div class="vrticlTopNtFilter"> 
+               <span class="fliterHdr ff500">Manufacturer</span>
+                <div class="searchFiled">
+                  <div class="filterSearchBox"  id="filterSearchBoxID">
+                    <input type="text" class="filterSearchInputBox" placeholder="Search for Manufacturer">
+                    <span class="searchRemove"></span>
+                  </div>
+                  <span class="filter-search-iconSearch sprite search"  id="searchBox">
+                </span>
+                </div>
+             </div>
+             <ul class="fltrList">
+                <li>
+                   <label class="gs_control gs_checkbox">All
+                      <input type="checkbox">
+                      <span class="gs_control__indicator"></span>
+                  </label>
+                </li>
+                <li>
+                   <label class="gs_control gs_checkbox">Ashok Leyland Ltd
+                      <input type="checkbox">
+                      <span class="gs_control__indicator"></span>
+                  </label>
+                </li>
+                <li>
+                   <label class="gs_control gs_checkbox">FCA India Automobiles Pvt Ltd
+                      <input type="checkbox">
+                      <span class="gs_control__indicator"></span>
+                  </label>
+                </li> 
+                <li>
+                   <label class="gs_control gs_checkbox">Force Motors Ltd
+                      <input type="checkbox">
+                      <span class="gs_control__indicator"></span>
+                  </label>
+                </li>
+                <li>
+                   <label class="gs_control gs_checkbox">Ford India Pvt Ltd
+                      <input type="checkbox">
+                      <span class="gs_control__indicator"></span>
+                  </label>
+                </li>
+                <li>
+                   <label class="gs_control gs_checkbox">General Motors India Pvt Ltd
+                      <input type="checkbox">
+                      <span class="gs_control__indicator"></span>
+                  </label>
+                </li>
+                <li>
+                   <label class="gs_control gs_checkbox">Honda Cars India Ltd
+                      <input type="checkbox">
+                      <span class="gs_control__indicator"></span>
+                  </label>
+                </li>  
+                <li>
+                   <label class="gs_control gs_checkbox">Ford India Pvt Ltd
+                      <input type="checkbox">
+                      <span class="gs_control__indicator"></span>
+                  </label>
+                </li>
+                <li>
+                   <label class="gs_control gs_checkbox">General Motors India Pvt Ltd
+                      <input type="checkbox">
+                      <span class="gs_control__indicator"></span>
+                  </label>
+                </li>
+                <li>
+                   <label class="gs_control gs_checkbox">Honda Cars India Ltd
+                      <input type="checkbox">
+                      <span class="gs_control__indicator"></span>
+                  </label>
+                </li> 
+                <!-- <li class="lessMore">
+                    <span>show less</span> 
+                </li> -->
+                <li class="menufShowMore" id="popUpFilter">
+                    <span>&#43; 48 more</span> 
+                </li>
+             </ul>
+         </div>
+         <div class="MobibtnFStiky text-center">
+            <button class="button clearAll">Clear all</button>
+            <button class="button">Apply filters</button>
+         </div>
+  </div>
+</div>
+<!-- leftContainer end here -->
+<!--  ryt container start here -->
+  <div class="rytContainer">
+     <h1>Report <a href="" title="Download Report" class="hiddenMd sprite MobiDwnldIcon"></a></h1>
+     <div class="reportCard">
+        <a href="#" title="Download Report" class="downloadIcon">
+            <img class="downloadTop" src="images/download.png">
+            <img class="downloadArrow" src="images/download-arrow.png">
+        </a>
+        <ul id="tab" class="gsc-ta-clickWrap">
+          <li data-gstab><a href="index.html" title="Annual Growth">Annual Growth</a></li>
+          <li data-gstab><a href="" title="Month YoY Growth">Month YoY Growth</a></li>
+          <li data-gstab><a href="MarketShareAnalysis.html" title="Market Share Analysis">Market Share Analysis</a></li>
+        </ul>
+        <div class="clearfix"></div>
+        <div id="tab-container" class="gsc-ta-contentWrap">
+          <div class="gsc-ta-content" data-gstab-container>
+              <h2 class="text-center">Segment Wise Analysis (Annual Growth)</h2>
+              <div class="imgContainer">
+                <img class="imgMobile" src="images/mobile.jpg" alt="graph">
+                <img class="imgDesk" src="images/graph.jpg" alt="graph">
+              </div>
+          </div>
+          <div class="gsc-ta-content" data-gstab-container>
+              <h2 class="text-center">Segment Wise Analysis (Month YoY Growth) </h2>
+              <div class="imgContainer">
+                <img class="imgMobile" src="images/mobi-graph-02.jpg" alt="graph">
+                <img class="imgDesk" src="images/graph-02.jpg" alt="graph">
+              </div>
+          </div>
+          <div class="gsc-ta-content" data-gstab-container>
+              <h2 class="text-center">Segment Wise Analysis (Market Share Analysis)</h2>
+             <div class="imgContainer">
+                <img class="imgMobile" src="images/mobie-graph-03.jpg" alt="graph">
+                <img class="imgDesk" src="images/graph-03.jpg" alt="graph">
+              </div>
+          </div>
+     </div>
+
+  </div>
+</div>
+<!--  ryt container end here -->
+</main>
+<!-- footer start here -->
+<footer>
+    <span> © 2019 by <b>Girnar Software Pvt. Ltd.</b> All Rights Reserved</span>
+</footer>
+<!-- footer end here -->
+
+<!-- popUp for  Manufacturer start here-->
+<div class="PopUpOverLay">
+    <div class="fltrPopUp">
+        <div class="fltrPopUpMobiHdr" id="fltrPopUpMobiHdr">
+          <span class="sprite arrowBack"></span>
+          <span class="fliterHdr ff500">Manufacturer</span>
+          <button class="button clearAll">clear</button>
+        </div>
+        <div class="filtrPopupHdr">
+          <div class="filterSearchBox">
+            <input type="text" class="filterSearchInputBox" placeholder="Search for Manufacturer">
+            <span class="sprite search"></span>
+          </div>
+          <button class="button clearAll hiddenXsinblk" title="Clear All">Clear all</button>
+          <div class="close hiddenXs" title="Close"></div>
+        </div>
+      <div class="filtrPopupContainer">
+           <ul class="fltrList">
+                <li>
+                   <label class="gs_control gs_checkbox">Ashok Leyland Ltd
+                      <input type="checkbox">
+                      <span class="gs_control__indicator"></span>
+                  </label>
+                </li>
+                <li>
+                   <label class="gs_control gs_checkbox">Atul Auto Limited
+                      <input type="checkbox">
+                      <span class="gs_control__indicator"></span>
+                  </label>
+                </li> 
+                <li>
+                   <label class="gs_control gs_checkbox">Bajaj Auto Ltd
+                      <input type="checkbox">
+                      <span class="gs_control__indicator"></span>
+                  </label>
+                </li>
+                <li>
+                   <label class="gs_control gs_checkbox">FCA India Automobiles Pvt Ltd
+                      <input type="checkbox">
+                      <span class="gs_control__indicator"></span>
+                  </label>
+                </li>
+                <li>
+                   <label class="gs_control gs_checkbox">FIAT INDIA AUTOMOBILES Private Limited
+                      <input type="checkbox">
+                      <span class="gs_control__indicator"></span>
+                  </label>
+                </li>
+                <li>
+                   <label class="gs_control gs_checkbox">Force Motors Ltd
+                      <input type="checkbox">
+                      <span class="gs_control__indicator"></span>
+                  </label>
+                </li>  
+                <li>
+                   <label class="gs_control gs_checkbox">Ford India Pvt Ltd
+                      <input type="checkbox">
+                      <span class="gs_control__indicator"></span>
+                  </label>
+                </li>
+                <li>
+                   <label class="gs_control gs_checkbox">General Motors India Pvt Ltd
+                      <input type="checkbox">
+                      <span class="gs_control__indicator"></span>
+                  </label>
+                </li>
+                <li>
+                   <label class="gs_control gs_checkbox">H-D Motor Company India Pvt Ltd
+                      <input type="checkbox">
+                      <span class="gs_control__indicator"></span>
+                  </label>
+                </li> 
+                <li>
+                   <label class="gs_control gs_checkbox">Hero MotoCorp Ltd
+                      <input type="checkbox">
+                      <span class="gs_control__indicator"></span>
+                  </label>
+                </li>
+                <li>
+                   <label class="gs_control gs_checkbox">Hindustan Motor Fin. Corp.Ltd/Hindustan Motors Ltd
+                      <input type="checkbox">
+                      <span class="gs_control__indicator"></span>
+                  </label>
+                </li> 
+                <li>
+                   <label class="gs_control gs_checkbox">Honda Cars India Ltd
+                      <input type="checkbox">
+                      <span class="gs_control__indicator"></span>
+                  </label>
+                </li>
+                <li>
+                   <label class="gs_control gs_checkbox">Honda Motorcycle & Scooter India (Pvt) Ltd
+                      <input type="checkbox">
+                      <span class="gs_control__indicator"></span>
+                  </label>
+                </li>
+                <li>
+                   <label class="gs_control gs_checkbox">Hyundai Motor India Ltd
+                      <input type="checkbox">
+                      <span class="gs_control__indicator"></span>
+                  </label>
+                </li>
+                <li>
+                   <label class="gs_control gs_checkbox">Honda Cars India Ltd
+                      <input type="checkbox">
+                      <span class="gs_control__indicator"></span>
+                  </label>
+                </li>  
+                <li>
+                   <label class="gs_control gs_checkbox">India Kawasaki MotorsPrivate Ltd
+                      <input type="checkbox">
+                      <span class="gs_control__indicator"></span>
+                  </label>
+                </li>
+                <li>
+                   <label class="gs_control gs_checkbox">India Yamaha Motor Pvt Ltd
+                      <input type="checkbox">
+                      <span class="gs_control__indicator"></span>
+                  </label>
+                </li>
+                <li>
+                   <label class="gs_control gs_checkbox">Isuzu Motors India Pvt Ltd
+                      <input type="checkbox">
+                      <span class="gs_control__indicator"></span>
+                  </label>
+                </li> 
+                <li>
+                   <label class="gs_control gs_checkbox">JBM Auto Ltd
+                      <input type="checkbox">
+                      <span class="gs_control__indicator"></span>
+                  </label>
+                </li>
+                <li>
+                   <label class="gs_control gs_checkbox">Mahindra & Mahindra Ltd
+                      <input type="checkbox">
+                      <span class="gs_control__indicator"></span>
+                  </label>
+                </li> 
+                <li>
+                   <label class="gs_control gs_checkbox">Mahindra Electric Mobility Ltd
+                      <input type="checkbox">
+                      <span class="gs_control__indicator"></span>
+                  </label>
+                </li>
+                <li>
+                   <label class="gs_control gs_checkbox">Mahindra Two Wheelers Ltd
+                      <input type="checkbox">
+                      <span class="gs_control__indicator"></span>
+                  </label>
+                </li>
+                <li>
+                   <label class="gs_control gs_checkbox">Maruti Suzuki India Ltd
+                      <input type="checkbox">
+                      <span class="gs_control__indicator"></span>
+                  </label>
+                </li>
+                <li>
+                   <label class="gs_control gs_checkbox">Honda Cars India Ltd
+                      <input type="checkbox">
+                      <span class="gs_control__indicator"></span>
+                  </label>
+                </li>  
+                <li>
+                   <label class="gs_control gs_checkbox">Nissan Motor India Pvt Ltd
+                      <input type="checkbox">
+                      <span class="gs_control__indicator"></span>
+                  </label>
+                </li>
+                <li>
+                   <label class="gs_control gs_checkbox">Piaggio Vehicles Pvt Ltd
+                      <input type="checkbox">
+                      <span class="gs_control__indicator"></span>
+                  </label>
+                </li>
+                <li>
+                   <label class="gs_control gs_checkbox">Renault India Pvt Ltd
+                      <input type="checkbox">
+                      <span class="gs_control__indicator"></span>
+                  </label>
+                </li> 
+                <li>
+                   <label class="gs_control gs_checkbox">Royal Enfield (Unit of Eicher Ltd)
+                      <input type="checkbox">
+                      <span class="gs_control__indicator"></span>
+                  </label>
+                </li>
+                <li>
+                   <label class="gs_control gs_checkbox">Scooters India Ltd
+                      <input type="checkbox">
+                      <span class="gs_control__indicator"></span>
+                  </label>
+                </li> 
+                <li>
+                   <label class="gs_control gs_checkbox">SkodaAuto India Pvt Ltd
+                      <input type="checkbox">
+                      <span class="gs_control__indicator"></span>
+                  </label>
+                </li>
+                <li>
+                   <label class="gs_control gs_checkbox">SML Isuzu Ltd
+                      <input type="checkbox">
+                      <span class="gs_control__indicator"></span>
+                  </label>
+                </li>
+                <li>
+                   <label class="gs_control gs_checkbox">Suzuki Motorcycle India Pvt Ltd
+                      <input type="checkbox">
+                      <span class="gs_control__indicator"></span>
+                  </label>
+                </li>
+                <li>
+                   <label class="gs_control gs_checkbox">Tata Motors Ltd
+                      <input type="checkbox">
+                      <span class="gs_control__indicator"></span>
+                  </label>
+                </li>  
+                <li>
+                   <label class="gs_control gs_checkbox">Toyota Kirloskar Motor Pvt Ltd
+                      <input type="checkbox">
+                      <span class="gs_control__indicator"></span>
+                  </label>
+                </li>
+                <li>
+                   <label class="gs_control gs_checkbox">Triumph Motorcycles (India) Pvt Ltd
+                      <input type="checkbox">
+                      <span class="gs_control__indicator"></span>
+                  </label>
+                </li>
+                <li>
+                   <label class="gs_control gs_checkbox">TVS Motor Company Ltd
+                      <input type="checkbox">
+                      <span class="gs_control__indicator"></span>
+                  </label>
+                </li> 
+                <li>
+                   <label class="gs_control gs_checkbox">UM Lohia Two Wheelers Pvt Ltd
+                      <input type="checkbox">
+                      <span class="gs_control__indicator"></span>
+                  </label>
+                </li>
+                <li>
+                   <label class="gs_control gs_checkbox">VECVs - Eicher
+                      <input type="checkbox">
+                      <span class="gs_control__indicator"></span>
+                  </label>
+                </li> 
+                <li>
+                   <label class="gs_control gs_checkbox">VECVs - Volvo
+                      <input type="checkbox">
+                      <span class="gs_control__indicator"></span>
+                  </label>
+                </li>
+                <li>
+                   <label class="gs_control gs_checkbox">Volkswagen India Pvt Ltd
+                      <input type="checkbox">
+                      <span class="gs_control__indicator"></span>
+                  </label>
+                </li>
+                <li>
+                   <label class="gs_control gs_checkbox">Volvo Group India Pvt Ltd
+                      <input type="checkbox">
+                      <span class="gs_control__indicator"></span>
+                  </label>
+                </li>
+            </ul>
+      </div>
+      <div class="hiddenXs fltrPopUpCta text-right">
+          <button class="button" title="Apply Filters">Apply filters</button>
+      </div>
+      <div class="hiddenMd MobifltrPopUpCta">
+           <span class="sltdCoutning">0 selected</span>
+           <button class="button disabled">Done</button>
+      </div>
+</div>
+</div>
+<!-- popUp for  Manufacturer end here -->
+
+<script src="js/jquery-2.2.3.min.js"></script>
+<script src="js/gsp_tab-1.0.0.js"></script>
+<script src="js/seprate.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+       $('#tab').gsp_tab({
+           content_wrap: '#tab-container',
+           defaultOpen: 2,
+           responsive: false,
+           // tab: true,
+           layout: 'auto',
+           // breakpoint: 767
+       });
+   });  
+</script>
+</body>
+</html>
+
